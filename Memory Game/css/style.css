@@ -1,0 +1,68 @@
+h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    color: rgb(48, 31, 10);
+}
+.external_btns{
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn{
+    padding: 10px 20px;
+    border: 2px solid #575555;
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: rgb(245, 223, 158);
+    border: 2px solid rgb(245, 223, 158);
+    cursor: pointer;
+
+}
+.container {
+
+    padding: 15px;
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.cardImg {
+    width: calc(25% - 10px);
+    margin: 5px;
+    position: relative;
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, .3);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.cardImg .fronImg,
+.cardImg .backImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.fronImg img,
+.backImg img {
+    width: 100%;
+    height: 100%;
+}
+.cardImg .backImg {
+    transform: rotateY(180deg);
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+.identical {         
+    visibility: hidden;
+}
